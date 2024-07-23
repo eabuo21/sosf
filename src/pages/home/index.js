@@ -20,7 +20,7 @@ const Home = () => {
           </h2>
           <p className="text-gray-400 text-center mb-3">
             Overall, the website should create a compelling narrative around
-            UnityForChange's mission, showcasing the impact they have in various
+            Unity For Changes mission, showcasing the impact they have in various
             areas and encouraging visitors to donate and join their cause for
             creating positive change in the world
           </p>

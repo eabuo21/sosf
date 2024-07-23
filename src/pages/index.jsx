@@ -61,7 +61,7 @@ const Index = () => {
     }, 8000);
 
     return () => clearInterval(interval);
-  }, []);
+  },);
 
   return (
     <>

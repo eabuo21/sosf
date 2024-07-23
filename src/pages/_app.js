@@ -14,6 +14,7 @@ import "../utils/helpers/fontawesome";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
+import Link from "next/link";
 
 config.autoAddCss = false;
 function MyApp({ Component, pageProps }) {

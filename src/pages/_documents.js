@@ -1,4 +1,14 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import "../utils/helpers/fontawesome";
+import "primereact/resources/themes/saga-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
+
+
+config.autoAddCss = false;
+
 
 class MyDocument extends Document {
   render() {
@@ -18,6 +28,10 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             referrerPolicy="no-referrer"
           />
+          <link
+          href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap"
+          rel="stylesheet"
+        />
         </Head>
         <body>
           <Main />
