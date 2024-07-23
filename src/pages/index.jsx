@@ -28,7 +28,7 @@ import "swiper/css/pagination";
 import BrochureCheckout from "@/components/home/BrochureCheckout ";
 import Partners from "@/components/shared/partners/partners";
 
-const index = () => {
+const Index = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const slides = [
@@ -425,4 +425,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
