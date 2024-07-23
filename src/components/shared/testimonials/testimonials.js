@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-
 import {
   EffectFade,
   Navigation,
@@ -9,6 +8,7 @@ import {
   Scrollbar,
   Autoplay,
 } from "swiper/modules";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -19,28 +19,21 @@ const Testimonials = () => {
   const testimonialSlides = [
     {
       id: 1,
-      text: "SOSF has, directly and indirectly, granted me access to a wide network of people who have been a stepping stone at every point in my life, in fact, my first laptop, first year’s tuition, and internship with a major architecture firm before resuming high institution came from the mentor assigned to me by SOSF. ",
-      name: "Michael Onoja ",
+      text: "SOSF has, directly and indirectly, granted me access to a wide network of people who have been a stepping stone at every point in my life, in fact, my first laptop, first year’s tuition, and internship with a major architecture firm before resuming high institution came from the mentor assigned to me by SOSF.",
+      name: "Michael Onoja",
       title: "CEO/Founder Evolve Africa",
       svgFill: "#9A78FF",
     },
     {
       id: 2,
-      text: [
-        "Building my business has been grueling, exhausting, inspiring, and exciting. I was also able to come up with a job description for my employees for proper organizational structure.",
-        <br />,
-        <br />,
-      ],
-      name: "StellaMaris Obeta  ",
+      text: "Building my business has been grueling, exhausting, inspiring, and exciting. I was also able to come up with a job description for my employees for proper organizational structure.",
+      name: "StellaMaris Obeta",
       title: "CEO/Founder",
       svgFill: "#FFA800",
     },
     {
       id: 3,
-      text: [
-        "The Skills Outside School Foundation offered me full scholarship from my SSS2, which covers tuition and all SSCE Fees (JAMB fees, WAEC and NECO fees)were was paid by SOSF . My tertiary institution tuition and those of my two (2) siblings in higher institution are being paid as at when due till date.",
-        <br />,
-      ],
+      text: "The Skills Outside School Foundation offered me a full scholarship from my SSS2, which covers tuition and all SSCE Fees (JAMB fees, WAEC, and NECO fees) were paid by SOSF. My tertiary institution tuition and those of my two siblings in higher institution are being paid as at when due till date.",
       name: "Fatima Ali",
       title: "Accounting Student",
       svgFill: "#9A78FF",
@@ -64,9 +57,9 @@ const Testimonials = () => {
             autoplay={{
               disableOnInteraction: false,
             }}
-            loop={2000}
+            loop={true}
             speed={2000}
-            pagination={{ el: ".swiper-pagination", clickable: false }}
+            pagination={{ el: ".swiper-pagination", clickable: true }}
             scrollbar={{ draggable: true }}
             breakpoints={{
               "@0.00": {
@@ -89,11 +82,11 @@ const Testimonials = () => {
             slidesPerView={1.4}
             spaceBetween={25}
             modules={[Pagination, Autoplay]}
-            className="w-full pt-0  pb-4 "
+            className="w-full pt-0 pb-4"
           >
-            {testimonialSlides.map((slide, index) => (
+            {testimonialSlides.map((slide) => (
               <SwiperSlide
-                key={index}
+                key={slide.id}
                 className="bg-gray-100 rounded-2xl w-full h-[290px] sm:h-[320px] mb-4 p-4 sm:p-7 cursor-pointer"
               >
                 <svg
@@ -132,9 +125,9 @@ const Testimonials = () => {
         </div>
       </section>
 
-      {/* desktop testimonial */}
+      {/* Desktop testimonial */}
       <section
-        className={`bg-[#E9EDFF] hidden lg:block lg:px-16 lg:py-16 xl:py-20 2xl:py-28`}
+        className="bg-[#E9EDFF] hidden lg:block lg:px-16 lg:py-16 xl:py-20 2xl:py-28"
       >
         <h3 className="text-3xl md:text-4xl text-secondary_blue font-bold text-center">
           What Some of Our Ambassadors Have to Say
@@ -147,7 +140,7 @@ const Testimonials = () => {
             </p>
             <Link href="" className="cursor-pointer">
               <button className="border-blue border-2 hover:bg-blue hover:text-white rounded-full py-3 px-4 text-blue bg-transparent flex justify-center items-center text-center text-lg">
-                Get Started{" "}
+                Get Started
               </button>
             </Link>
           </div>
@@ -157,7 +150,7 @@ const Testimonials = () => {
               autoplay={{
                 disableOnInteraction: false,
               }}
-              loop={1000}
+              loop={true}
               speed={3000}
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
@@ -182,11 +175,11 @@ const Testimonials = () => {
               slidesPerView={1}
               spaceBetween={25}
               modules={[Scrollbar, Pagination, Autoplay]}
-              className="w-full pt-0  pb-7 "
+              className="w-full pt-0 pb-7"
             >
-              {testimonialSlides.map((slide, index) => (
+              {testimonialSlides.map((slide) => (
                 <SwiperSlide
-                  key={index}
+                  key={slide.id}
                   className="bg-gray-100 rounded-2xl w-full h-[330px] lg:h-[295px] mb-4 p-5 sm:p-5 cursor-pointer"
                 >
                   <svg
@@ -200,7 +193,7 @@ const Testimonials = () => {
                       d="M15.6219 15.9188C17.5539 15.9188 19.1211 14.3072 19.1211 12.3188C19.1211 10.3316 17.5539 8.71882 15.6219 8.71882C12.1239 8.71882 14.4555 1.76002 19.1211 1.76002L19.1211 0.0800219C10.7943 0.0788221 7.53149 15.9188 15.6219 15.9188ZM5.54189 15.9188C7.47269 15.9188 9.03989 14.3072 9.03989 12.3188C9.03989 10.3316 7.47269 8.71882 5.54189 8.71882C2.04269 8.71882 4.37429 1.76002 9.03989 1.76002V0.0800219C0.714293 0.0788221 -2.54851 15.9188 5.54189 15.9188Z"
                       fill={slide.svgFill}
                     />
-                  </svg>{" "}
+                  </svg>
                   <p className="text-sm text-gray-600 mt-4">{slide.text}</p>
                   <div className="mt-5 sm:mt-7 flex items-center">
                     <div className="w-16 h-16 relative">
