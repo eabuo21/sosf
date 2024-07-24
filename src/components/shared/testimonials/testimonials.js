@@ -48,7 +48,7 @@ const Testimonials = () => {
             What Some of Our Ambassadors Have to Say
           </h3>
           <p className="text-gray-700 pt-2 text-sm md:text-xl text-center">
-            Our ambassadors share their experiences and the impact they've seen.
+            Our ambassadors share their experiences and the impact they&apos;ve seen.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ const Testimonials = () => {
         <div className="flex flex-col lg:mt-20 lg:flex-row justify-between items-start mx-auto lg:w-[95%] xl:w-[90%] 2xl:w-[75%]">
           <div className="w-[45%] ">
             <p className="text-gray-700 pb-7 lg:text-[32px] font-semibold tracking-wide">
-              Our ambassadors share their experiences and the impact they've
+              Our ambassadors share their experiences and the impact they&apos;ve
               seen.
             </p>
             <Link href="" className="cursor-pointer">
