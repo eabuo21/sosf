@@ -8,6 +8,7 @@ import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
 const CoreValueAccordionItem = ({ title, description, expanded, onChange }) => (
+  
   <Accordion
     style={{
       background: "transparent",
@@ -44,6 +45,20 @@ const CoreValueAccordionItem = ({ title, description, expanded, onChange }) => (
 );
 
 const Accordion1 = ({ values }) => {
+  const [displayCount, setDisplayCount] = useState(2); // State to track number of items to display
+  const [viewMoreText, setViewMoreText] = useState("View More"); // State to toggle button text
+
+
+  const handleToggleView = () => {
+    if (displayCount === 2) {
+      setDisplayCount(items.length); // Show all items
+      setViewMoreText("View Less");
+    } else {
+      setDisplayCount(2); // Show only 2 items
+      setViewMoreText("View More");
+    }
+  };
+
   const [selectedItem, setSelectedItem] = useState(values[0].title);
 
   const handleAccordionChange = (item) => {
@@ -54,6 +69,7 @@ const Accordion1 = ({ values }) => {
 
   return (
     <div className="grid grid-cols-1 gap-6 h-[fixed] p-2 lg:grid-cols-2 md:gap-2 w-full">
+     
       <div className="w-full h-[fixed] lg:w-[600px] lg:h-[400px] px-8">
         {values.map((value) => (
           <CoreValueAccordionItem

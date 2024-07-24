@@ -1,4 +1,6 @@
 import brochure from "../../../public/assets/images/mountain.jpeg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const BrochureCheckout = () => {
   return (
@@ -29,9 +31,13 @@ const BrochureCheckout = () => {
             </div>
             <button
               type="submit"
-              className="w-full mt-4 p-3 rounded-lg border border-dark_blue bg-dark_blue text-white font-semibold uppercase hover:bg-white hover:text-dark_blue hover:border-dark_blue"
+              className={` brochure-button flex gap-x-5  justify-center items-center w-full mt-4 p-3 rounded-lg border border-dark_blue bg-dark_blue text-white font-semibold uppercase hover:bg-white hover:text-dark_blue hover:border-dark_blue , `}
             >
-              Get Brochure
+              Get Brochure{" "}
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                className="text-white font-bold text-xl brochure-icon "
+              />
             </button>
           </form>
         </div>

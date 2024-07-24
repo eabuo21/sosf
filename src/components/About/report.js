@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSlack } from "@fortawesome/free-brands-svg-icons";
+import { FaChevronRight } from "react-icons/fa";
 
 function Report() {
   useEffect(() => {
@@ -118,7 +119,7 @@ function Report() {
               className="hover-line text-black text-xl md:px-5  lg:relative lg:top-6 lg:text-justify-center lg:items-center lg:flex "
               href="/subpages/aboutus/reports"
             >
-              Explore Report &rarr;
+              Explore Report <FaChevronRight className="brochure-icon"/>
             </Link>
           </section>
         </div>

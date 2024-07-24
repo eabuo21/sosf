@@ -28,6 +28,7 @@ import "swiper/css/pagination";
 import BrochureCheckout from "@/components/home/BrochureCheckout ";
 import Partners from "@/components/shared/partners/partners";
 
+
 const Index = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -180,9 +181,9 @@ const Index = () => {
                 />
               </div>
             </div>
-            <div className=" w-full md:w-[50%] mt-4 md:mt-0 text-center md:text-left">
-              <h3 className="text-xl md:text-2xl text-secondary_blue font-bold text-center mb-2 md:mb-3">
-                Our Work is Aligned with the SD3s
+            <div className=" w-full md:w-[50%] mt-4 md:mt-0 text-center md:text-left ">
+              <h3 className="text-xl md:text-2xl text-secondary_blue font-bold text-left mb-2 md:mb-3">
+                Our Work is Aligned with the SDGs
               </h3>
               <p className="text-black text-sm md:text-[0.95rem] mb-4">
                 The Sustainable Development Goals (SDGs), also known as the
@@ -194,9 +195,11 @@ const Index = () => {
               <p className="text-black text-sm md:text-[0.95rem] font-bold mb-6">
                 Our work supports 9 SDGs directly & all 17 indirectly.
               </p>
+              <Link href="">
               <button className="border-blue border-2 hover:bg-blue hover:text-white rounded-full py-3 px-4 text-blue bg-transparent flex justify-center items-center text-center text-lg">
-                Get Started{" "}
+                Get Started  &rarr;{" "}
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -393,7 +396,7 @@ const Index = () => {
             </div>
             <div className="flex justify-center item-center mt-6">
               <button className="bg-blue text-white py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 flex items-center justify-center">
-                Join now <FaArrowRight className="ml-2" />
+                Join now <FaArrowRight className="ml-2 brochure-icon" />
               </button>
             </div>
           </div>

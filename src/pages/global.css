@@ -6,6 +6,30 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
 
+.brochure-button:hover .brochure-icon{
+  color: black;
+  transform: translateX(80%);
+  transition: 0.9s ease-in-out;
+  }
+  .brochure-button .brochure-icon{
+    transition: 0.9s ease-in-out;
+  
+  }
+
+  .brochure-icon{
+    animation: move  1s ease-in-out infinite alternate ;
+  }
+
+@keyframes move{
+  from{
+    transform: translateX(95%);
+   
+  }
+to {
+    transform: translateX(-20%);
+   
+  }
+}
 
 
 body {

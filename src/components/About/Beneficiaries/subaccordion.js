@@ -1,7 +1,7 @@
 import CoreValues from "@/components/shared/accordions/accordionwith-video";
-const coreValuesData = [
+const accs = [
   {
-    title: "Integrity",
+    title: "Beneficiary 1",
     description:
       "We are responsible and provide the best quality in our work, while ensuring belief in social responsibility, openness, transparency and accountability to one and other, and all stakeholders, beneficiaries and partners. We “walk the talk” and our word is our bond.",
     imageUrl:
@@ -11,14 +11,29 @@ const coreValuesData = [
 
   
   {
-    title: "Collaboration",
+    title: "Beneficiary 2",
     description:
       "We value learning and feedback, and believe in the importance of sharing knowledge, skills and experiences to scale impact. We partner with individuals and institutions that share our values, mission and vision.",
     imageUrl: "https://www.betterup.com/hs-fs/hubfs/Happy-work-team-cheering-and-celebrating-at-meeting-team-collaboration.jpg?width=964&height=643&name=Happy-work-team-cheering-and-celebrating-at-meeting-team-collaboration.jpg",
       
   },
   {
-    title: "Service",
+    title: "Beneficiary 3",
+    description:
+      "We seek to deliver long-term sustainable, holistic and data-driven interventions. We believe in advocacy based on proofs of concept and impact as the avenue for entrenching lasting change. At the heart of our work is our focus on building human capital to drive socio-economic change in their communities.",
+    imageUrl:
+      "https://ph.canon/media/image/2019/03/26/e07ca1812a46404aa3b8cea095b77f2f_business-service-landing-page.jpg",
+  },
+
+  {
+    title: "Beneficiary 4",
+    description:
+      "We seek to deliver long-term sustainable, holistic and data-driven interventions. We believe in advocacy based on proofs of concept and impact as the avenue for entrenching lasting change. At the heart of our work is our focus on building human capital to drive socio-economic change in their communities.",
+    imageUrl:
+      "https://ph.canon/media/image/2019/03/26/e07ca1812a46404aa3b8cea095b77f2f_business-service-landing-page.jpg",
+  },
+  {
+    title: "Beneficiary 5",
     description:
       "We seek to deliver long-term sustainable, holistic and data-driven interventions. We believe in advocacy based on proofs of concept and impact as the avenue for entrenching lasting change. At the heart of our work is our focus on building human capital to drive socio-economic change in their communities.",
     imageUrl:
@@ -29,7 +44,7 @@ const coreValuesData = [
 export default function AccordionsLrftRight() {
   return (
     <div className="h-[fixed]">
-      <CoreValues values={coreValuesData} />
+      <CoreValues values={accs} />
     </div>
   );
 }

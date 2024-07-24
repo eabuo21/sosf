@@ -16,7 +16,7 @@ import Mobcarousel from "@/components/About/Beneficiaries/mobcarouselcards";
 import ParalaxBg from "@/components/About/Beneficiaries/paralax";
 import GridUnder from "@/components/About/Beneficiaries/grid";
 import SwiperHero from "@/components/About/swiperhero";
-import AccordionsLrftRight from "@/components/About/Beneficiaries/subaccordion";
+import AccordionLtRt from "@/components/About/Beneficiaries/subaccordion";
 
 const Beneficiaries = () => {
   const handleScroll = () => {
@@ -47,7 +47,7 @@ const Beneficiaries = () => {
 
         <section className=" sub-her-beneficiaries pb-8 pt-8 h-[fixed]">
           <Subhero />
-          <AccordionsLrftRight />
+          <AccordionLtRt />
         </section>
         <hr className=" border  border-blue border-opacity-78 md:w-[1200px] mx-auto"></hr>
 
